@@ -1,0 +1,25 @@
+/* all app scss styles here */
+
+@import "compass/css3";
+@import "compass/utilities";
+
+body {
+	// needs latest Compass, add '@import "compass"' to your scss
+	background-color: rgb(125,126,125); // Old browsers
+	@include filter-gradient(#7d7e7d, #0e0e0e, vertical); // IE6-9
+	@include background-image(linear-gradient(top, rgba(14,14,14,1) 0%,rgba(125,126,125,1) 100%));
+}
+.top-bar {
+	background: #000;
+	height: 104px;
+	img {
+		height:104px;
+	}
+	.name h1 {
+		text-transform:uppercase;
+		font-size: 2em;
+		a {
+			color: #fed844;
+		}
+	}
+}
